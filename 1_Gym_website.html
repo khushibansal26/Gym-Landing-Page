@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Webpage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&family=Supermercado+One&display=swap"
+        rel="stylesheet">
+    <style>
+        /* CSS reset */
+        body {
+            margin: 0px;
+            padding: 0px;
+            color: white;
+            background: url('img/pexels-photo-416809.jpeg');
+            /* height: 5000px; */
+
+        }
+
+        .left {
+            /* border: 2px solid green; */
+            display: inline-block;
+            position: absolute;
+            left: 0px;
+            top: 7px;
+            margin: 12px;
+        }
+
+        .mid {
+            display: block;
+            width: 56%;
+            padding: 13px;
+            margin: 20px auto;
+            /* border: 2px solid rgb(186, 212, 35); */
+
+
+        }
+
+        .right {
+            /* border: 2px solid rgb(82, 27, 170); */
+            position: absolute;
+            right: 0px;
+            top: 7px;
+            display: inline-block;
+            margin: 12px;
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 40px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: rgb(245, 238, 208);
+            text-decoration: underline;
+
+        }
+
+        .left img {
+            width: 137px;
+        }
+
+        .left div {
+            font-family: Supermercado One;
+            text-align: center;
+            font-size: 21px;
+        }
+
+        .btn {
+            margin: 7px;
+            padding: 10px;
+            background-color: #b1aaaa;
+            color: white;
+            border: 2px solid black;
+            border-radius: 12px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(155, 136, 155);
+        }
+
+        .container {
+            border: 2px solid rgb(192, 192, 197);
+            margin: 36px auto;
+            padding: 88px;
+            width: 43%;
+            border-radius: 16px;
+
+        }
+
+        .container h1 {
+            text-align: center;
+
+        }
+
+        .formgroup input {
+            text-align: center;
+            margin: 14px;
+            display: block;
+            width: 215px;
+            padding: 13px;
+            border: 2px solid black;
+            margin: 10px auto;
+            border-radius: 16px;
+            font-size: 16px;
+
+        }
+
+        .formgroup button {
+            display: block;
+            width: 138px;
+            margin: 21px auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/download (1).jpg" alt="">
+            <div>Fitness Arena</div>
+        </div>
+        <!-- /center box for nav bar -->
+        <div class="mid">
+            <nav class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </nav>
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the Best Gym Of Delhi Now!</h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter Your Name">
+                <input type="text" name="" placeholder="Enter Your Age">
+                <input type="text" name="" placeholder="Enter Your Gender">
+                <input type="text" name="" placeholder="Enter Your Locality">
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
